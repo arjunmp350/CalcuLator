@@ -230,4 +230,16 @@
         android:textColor="#ffffffff"
         android:clickable="true" />
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="C"
+        android:id="@+id/btn_clr"
+        android:background="#03a9f4"
+        android:textColor="#ffffffff"
+        android:clickable="true"
+        android:layout_above="@+id/btn_sym_min"
+        android:layout_toRightOf="@+id/btn_sym_plus" />
+
 </RelativeLayout>
