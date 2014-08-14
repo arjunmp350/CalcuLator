@@ -15,6 +15,7 @@ public class MyActivity extends Activity {
     private EditText Src;
     private float numbBr;
     private String operation;
+    private ButtonClickListener btnclick;
 
 
     @Override
@@ -29,7 +30,7 @@ public class MyActivity extends Activity {
 
         for (int id:idList) {
             View v = findViewById(id);
-            v.setOnClickListener(BtnClk);
+            v.setOnClickListener(btnclick);
 
         }
     }
@@ -76,7 +77,6 @@ public class MyActivity extends Activity {
         Src.setText(String.valueOf(result));
 
         }
-    }
 
     private class ButtonClickListener implements View.OnClickListener {
         public void onClick(View v) {
@@ -109,7 +109,7 @@ public class MyActivity extends Activity {
 
             }
         }
-
+    }
 
 
 
