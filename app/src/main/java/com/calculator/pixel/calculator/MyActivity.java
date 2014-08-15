@@ -26,7 +26,7 @@ public class MyActivity extends Activity {
         Src.setEnabled(false);
 
         int idList[] = {R.id.btn_no_0,R.id.btn_no_1,R.id.btn_no_2,R.id.btn_no_3,R.id.btn_no_4,R.id.btn_no_5,R.id.btn_no_6,R.id.btn_no_7,R.id.btn_no_8,
-        R.id.btn_no_9,R.id.btn_sym_div,R.id.btn_sym_dot,R.id.btn_sym_eq,R.id.btn_sym_min,R.id.btn_sym_multi,R.id.btn_sym_plus,R.id.btn_clr};
+        R.id.btn_no_9,R.id.btn_sym_div,R.id.btn_sym_dot,R.id.btn_sym_eq,R.id.btn_sym_min,R.id.btn_sym_multi,R.id.btn_sym_plus,R.id.btn_clr,R.id.txtnum_inp};
 
         for (int id:idList) {
             View v = findViewById(id);
