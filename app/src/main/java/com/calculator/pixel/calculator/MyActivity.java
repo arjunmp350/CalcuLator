@@ -9,8 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-
-public class MyActivity extends Activity {
+public class MyActivity extends Activity   {
 
     private EditText Src;
     private float numbBr;
@@ -30,6 +29,7 @@ public class MyActivity extends Activity {
 
         for (int id:idList) {
             View v = findViewById(id);
+            btnclick = new ButtonClickListener();
             v.setOnClickListener(btnclick);
 
         }
@@ -53,7 +53,7 @@ public class MyActivity extends Activity {
     public  void getKeyboard(String str){
         String SrcCurrent = Src.getText().toString();
         if (SrcCurrent.equals("0"))
-            SrcCurrent = " ";
+        SrcCurrent = "";
         SrcCurrent += str;
         Src.setText(SrcCurrent);
     }
@@ -84,7 +84,7 @@ public class MyActivity extends Activity {
                 case R.id.btn_clr:
                     Src.setText("0");
                     numbBr = 0;
-                    operation = "";
+                    operation = " ";
                     break;
                 case R.id.btn_sym_plus:
                     mMath("+");
@@ -110,7 +110,6 @@ public class MyActivity extends Activity {
             }
         }
     }
-
 
 
 
